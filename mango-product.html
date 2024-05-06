@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Threads</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="file:///C:/Users/Windows/OneDrive/Documents/Adobe/Photoshop/iconlogo.png">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <section id="header">
+        <!-- logo -->
+        <a href="#"><img src="file:///C:/Users/Windows/OneDrive/Documents/Adobe/Photoshop/hci%20logo%204.png" class="logo" alt=""></a>
+
+        <nav>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">Accesories</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <ul id="icons">
+                <li><a href=""><i class="fa-regular fa-user" style="color: #ffffff;"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="hero">
+            <div class="row">
+                <div class="col">
+                    <div class="slider">
+                        <div class="product">
+                            <img src="file:///D:/Code/html/Final/mango1.png" onclick="clickme(this)" alt="">
+                            <img src="file:///D:/Code/html/Final/mango2.png" onclick="clickme(this)" alt="">
+                            <img src="file:///D:/Code/html/Final/mango3.png" onclick="clickme(this)" alt="">
+                            <img src="file:///D:/Code/html/Final/mango4.png" onclick="clickme(this)" alt="">
+                        </div>
+                        <div class="preview">
+                            <img src="file:///D:/Code/html/Final/mango1.png" id="imagebox" alt="">
+                        </div>
+                    </div>
+                </div>    
+                <div class="col">
+                    <div class="content">
+                        <h2>Mango Pocket Linen-Blend Jacket</h2>
+                        <h4>₱4995</h4>
+                        <div class="list">
+                            <ul>
+                                <li><a>100% cotton</a></li>
+                                <li><a>Four patch pockets on the front</a></li>
+                                <li><a>Front button closure</a></li>
+                                <li><a>Classic collar</a></li>
+                                <li><a>Long sleeve with buttoned cuffs</a></li>
+                                <li><a>Adjustable rope on the back</a></li>
+                                <li><a>Men fit</a></li>
+                            </ul>
+                        <div class="radio">
+                            <input class="radio__input" type="radio" value="option1" name="myRadio" id="myRadio1">
+                            <label class="radio__label" for="myRadio1">S</label>
+                            <input class="radio__input" type="radio" value="option2" name="myRadio" id="myRadio2">
+                            <label class="radio__label" for="myRadio2">M</label>
+                            <input class="radio__input" type="radio" value="option3" name="myRadio" id="myRadio3">
+                            <label class="radio__label" for="myRadio3">L</label>
+                            <input class="radio__input" type="radio" value="option4" name="myRadio" id="myRadio4">
+                            <label class="radio__label" for="myRadio4">XL</label>
+                            <input class="radio__input" type="radio" value="option5" name="myRadio" id="myRadio5">
+                            <label class="radio__label" for="myRadio5">2XL</label>
+                            <input class="radio__input" type="radio" value="option6" name="myRadio" id="myRadio6">
+                            <label class="radio__label" for="myRadio6">3XL</label>
+                        </div>
+                        
+                        <p>Quantity</p>
+
+                        <div class="quantity">
+                            <span class="minus">-</span>
+                            <span class="num">1</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <button class="AddtoCart">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <hr>
+    <footer class="section-p1">
+        <div class="row-1">
+            
+            <ul>
+                <li><a href="">Contact</a></li>
+                <li><div class="circle"></div></li>
+                <li><a href="">Returns & FAQ</a></li>
+                <li><div class="circle"></div></li>
+                <li><a href="">Terms of Service</a></li>
+                <li><div class="circle"></div></li>
+                <li><a href="">Privacy Policy</a></li>
+            </ul>
+
+            <div class="icons">
+                <a href="https://www.facebook.com/maubert.yretarino.7" target="_blank"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a>
+                <a href="https://www.youtube.com/@hcdcofficial" target="_blank"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+        <div class="row2">
+            <ul>
+                <li><a href="">© 2024 NexGen Threads</a></li>
+                <li><a href="">Powered by HCDC</a></li>
+            </ul>
+
+            <img src="file:///C:/Users/Windows/OneDrive/Documents/Adobe/Photoshop/randompic.png" class="logo" alt="">
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    <script>
+        function clickme(smallImg) {
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = smallImg.src;
+        }
+    </script>
+</body>
+</html>
