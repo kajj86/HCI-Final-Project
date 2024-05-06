@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    position: relative;
+    width: 100%;
+    
+}
+
+/* navigation bar */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: black;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 30px;
+}
+
+#navbar li a {
+    font-family: 'Inter';
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+
+#navbar li a::before {
+    content: "";
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -0.3rem;
+    height: 2.5px;
+    width: 0;
+    transition: 0.3s ease-in-out;
+}
+
+#navbar li a:hover::before {
+    content: "";
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -0.3rem;
+    height: 2.5px;
+    width: 100%;
+}
+#icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#icons li {
+    font-size: 18px;
+    list-style: none;
+    padding: 0 15px;
+}
+
+#icons .cart {
+    position: relative;
+}
+
+.logo {
+    max-width: 155px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero {
+    padding: 20px 80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This will center the text vertically */
+    background: black;
+}
+
+.image {
+    width: 90%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: flex;
+    margin: auto;
+    border-radius: 26px;
+}
+
+
+.text-container {
+    position: absolute;
+    left: 6%; /* Align to the left */
+    top: 69%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for the height of the text */
+    padding-left: 20px; /* Add some space between the text and the image */
+}
+
+.text-container h1 {
+    font-family: 'DM Sans';
+    margin: 0; /* Remove default margin */
+    color: #ffffff; /* Change text color as needed */
+    font-size: 41px; /* Adjust font size as needed */
+    text-shadow: -1px -1px 0 black,
+                1px -1px 0 black,
+                -1px 1px 0 black,
+                1px 1px 0 black;
+}
+
+/* products */
+#product1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(0, 0, 0);
+    text-align: left;
+    padding: 20px 120px;
+}
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro {
+    width: 29%;
+    margin: 20px 8px;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 26px;
+}
+
+#product1 .pro a {
+    text-decoration: none;
+}
+
+#product.des {
+    margin-left: 10px;
+}
+
+.section-p1 h3 {
+    font-family: 'Roboto';
+    margin-left: 12px;
+    padding-top: 7px;
+    color: white;
+    font-size: 27px;
+}
+
+.section-p1 h4 {
+    font-family: 'Fredoka';
+    margin-left: 12px;
+    padding-top: 7px;
+    color: #ffffff;
+    font-size: 23px;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: black;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    height: 13px;
+    width: 13px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.row-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-1 ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.row-1 ul li a{
+    font-family: 'Lexend Deca';
+    margin: 20px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 21px;
+    color: #ffffff;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons a {
+    font-size: 25px;
+    padding: 0 20px;
+}
+
+.row2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row2 ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.row2 ul li a{
+    font-family: 'Lexend Deca';
+    margin: 20px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 21px;
+    color: #ffffff;
+}
+
+.row2 img {
+    width: 100%;
+    border-radius: 26px;
+}
+
+hr{
+    width: 90%;
+    border: 10px;
+    border-top: 1px #ffffff;
+    margin: 2px auto;
+}
+
+/* media query */
+
+@media (max-width) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: 0px;
+        height: 100vh;
+        width: 300px;
+    }
+}
+
+/* every single product */
+
+.hero{
+    width: 100%;
+    background: black;
+}
+
+.row {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.col {
+    flex-basis: 45%;
+}
+
+.slider {
+    height: 80vh;
+    display: flex;
+}
+
+.product img {
+    height: 19vh;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 26px;
+}
+
+.product-moist img {
+    height: 15vh;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 26px;
+}
+
+
+.preview img {
+    margin-left: 12px;
+    height: 100%;
+    border-radius: 26px;
+}
+
+.content h2 {
+    font-family: 'Roboto';
+    margin-left: 12px;
+    padding-top: 7px;
+    padding-left: 15px;
+    color: white;
+    font-size: 39px;
+}
+
+.content h4 {
+    font-family: 'Fredoka';
+    margin-left: 12px;
+    padding-top: 7px;
+    padding-left: 18px;
+    padding-bottom: 20px;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+li::marker {
+    color: white;
+}
+
+.list ul {
+    padding-left: 48px;
+}
+
+.list ul li a{
+    font-family: 'Fredoka';
+    margin-left: 12px;
+    padding-top: 7px;
+    padding-bottom: 20px;
+    color: #ffffff;
+    font-size: 26px;
+}
+
+.radio {
+    padding-top: 18px;
+    padding-left: 23px;
+    display: flex;
+    overflow: hidden;
+}
+
+.radio__input {
+    display: none;
+}
+
+.radio__label {
+    margin-left: 2px;
+    width: 75px;
+    text-align: center;
+    position: relative;
+    padding: 8px 14px;
+    font-family: 'Fredoka';
+    font-size: 20px;
+    font-weight: 600;
+    border-style: solid;
+    border-width: 3.5px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.radio__label:hover {
+    background-color: rgb(170, 170, 170);
+}
+
+.radio__input:checked + .radio__label {
+    background: white;
+    color: black;
+    border: 3.5px solid white;
+}
+
+.content p {
+    font-family: 'Fredoka';
+    padding-left: 33px;
+    padding-top: 20px;
+    color: #ffffff;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.quantity {
+    padding: 3px;
+    margin-left: 30px;
+    width: 130px;
+    color: white;
+    border-style: solid;
+    border-width: 3.5px;
+    position: relative;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity span {
+    width: 100%;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Fredoka';
+    cursor: pointer;
+}
+
+.quantity span.num {
+    pointer-events: none;
+}
+
+button {
+    position: relative;
+    padding: 3px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    width: 94%;
+    font-family: 'Fredoka';
+    font-size: 27px;
+    font-weight: 600;
+    border: 3.5px solid white;
+    border-radius: 16px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: white;
+    color: black;
+    border: 3.5px solid white;
+}
+
+button:active {
+    background: linear-gradient(to right, #d8992a, #8c14b4, #da41dc, #002874);
+    color: white;
+    border: 3.5px solid transparent;
+    background-image: linear-gradient(to right, #d8992a, #8c14b4, #da41dc, #002874);
+    background-origin: border-box;
+}
+
+
+
